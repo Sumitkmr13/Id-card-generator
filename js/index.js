@@ -15,3 +15,8 @@ function generateIdCard(event){
     const generatedIDCardContainer =document.getElementById('generated-id-card');
     generatedIDCardContainer.style.display = 'block';
 }
+
+function previewImage(event){
+    const targetImageContainer =document.getElementById('student-image');
+    targetImageContainer.src = URL.createObjectURL(event.target.files[0]);
+}
